@@ -5,7 +5,7 @@ Android native (kotlin) mobile application I made as a student of computer softw
 Works as intended on Android API 26, might crash on some of the later versions because of the "experimental" annotations used for jetpack compose, 
 which I did not fix because it is a student project.
 
-- Kotlin 100% (XML was used only in the manifest and for the splash screen)
+- Kotlin 100% (XML was used only in the manifest, resources, and for the splash screen front end)
 - Clean MVVM arhitecture
 - Dependency Injection
 - Jetpack Compose
