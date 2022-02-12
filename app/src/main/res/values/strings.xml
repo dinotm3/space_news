@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SpaceNews</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="settings_msg">Settings</string>
+    <string name="abouts_us_msg">About</string>
+    <string name="google_maps_key">AIzaSyCSOCumjskkjd3OsKiAFXbDTb1R-2DwxNE</string>
+</resources>
