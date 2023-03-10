@@ -73,6 +73,7 @@ fun parse(context: Context) : List<Article> {
                                             text, DateTimeFormatter.RFC_1123_DATE_TIME)
                                 }
                             }
+                            else -> {}
                         }
                     }
                 }
