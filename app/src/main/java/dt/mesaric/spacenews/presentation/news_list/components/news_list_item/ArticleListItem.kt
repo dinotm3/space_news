@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil.annotation.ExperimentalCoilApi
@@ -31,7 +32,10 @@ fun ArticleListItem(
 
     Card(
         modifier = Modifier
-            .padding(horizontal = LocalSpacing.current.medium, vertical = LocalSpacing.current.small)
+            .padding(
+                horizontal = LocalSpacing.current.medium,
+                vertical = LocalSpacing.current.small
+            )
             .fillMaxWidth(),
         elevation = LocalSpacing.current.mini,
         backgroundColor = Color.DarkGray,
@@ -44,9 +48,10 @@ fun ArticleListItem(
                 .padding(LocalSpacing.current.small),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            val painter = rememberImagePainter(data = File(article.picturePath!!))
+            //val painter = rememberImagePainter(data = File(article.picturePath!!))
             Image(
-                painter = painter,
+                // painter = painter
+                painter = painterResource(id = dt.mesaric.spacenews.R.drawable.ic_rocket),
                 contentDescription = null,
                 modifier = Modifier.size(IMAGE_MODIFIER)
             )

@@ -10,6 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -19,6 +20,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 
 import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
+import dt.mesaric.spacenews.R
 import dt.mesaric.spacenews.presentation.ui.theme.LocalSpacing
 import java.io.File
 
@@ -45,10 +47,11 @@ fun NewsDetailScreen(
 
                     }
                     Spacer(modifier = Modifier.padding(LocalSpacing.current.small))
-                    val painter = rememberImagePainter(data = File(article.picturePath!!))
+                    //val painter = rememberImagePainter(data = File(article.picturePath!!))
                     Row {
                         Image(
-                            painter = painter,
+                            // painter = painter
+                            painter = painterResource(id = R.drawable.ic_rocket),
                             contentDescription = null,
                             modifier = Modifier.size(IMAGE_MODIFIER_DETAIL)
                         )
