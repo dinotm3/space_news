@@ -59,8 +59,7 @@ fun ArticleListItem(
                 text = "${article.title}. \n\nDate: ${article.publishedDateTime}",
                 style = MaterialTheme.typography.body2,
                 overflow = TextOverflow.Ellipsis,
-                modifier = Modifier.align(Alignment.CenterVertically)
-            )
+                modifier = Modifier.align(Alignment.CenterVertically).align(Alignment.Bottom))
         }
     }
 }
